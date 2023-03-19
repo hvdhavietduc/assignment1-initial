@@ -1,0 +1,18 @@
+
+         isPalindrome : function boolean (s : string) {
+             for (i = 0, i < length(s) / 2, i + 1) {
+                 if (s[i] != s[length(s) - i - 1]) {
+                     return false;
+                 }
+             }
+             return true;
+         }
+         main: function void () {
+             s = "racecar";
+             if (isPalindrome(s)) {
+                 printString("s is a palindrome.");
+             } else {
+                 printString("s is not a palindrome.");
+             }
+         }
+         

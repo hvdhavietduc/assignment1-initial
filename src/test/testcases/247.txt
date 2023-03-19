@@ -1,0 +1,6 @@
+
+        main: function void () {
+            s = "This is a string\nwith\t\"escape characters\".";
+            printString(s);
+        }
+        

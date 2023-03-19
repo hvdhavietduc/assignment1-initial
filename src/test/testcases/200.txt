@@ -1,0 +1,7 @@
+geometric_sum: function integer(a: float, r: float, n: integer) {
+                        if (r == 1) {
+                            return a * n;
+                        } else {
+                            return a * (1 - pow(r, n)) / (1 - r);
+                        }
+                    }

@@ -1,0 +1,8 @@
+
+        main: function void () {
+            algorithm = "binary tree traversal (inorder)";
+            root : integer = parseTree("(3 (1 () (2)) (4 () (5)))");
+            result : array[5] of integer = {};
+            inorder(root, result);
+        }
+        

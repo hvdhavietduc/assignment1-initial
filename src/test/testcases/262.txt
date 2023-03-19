@@ -1,0 +1,17 @@
+
+         lowestCommonAncestor : function integer (root : integer, p : integer, q : integer) {
+             if ((p < root) && (q < root)) {
+                 return lowestCommonAncestor(rootLeft, p, q);
+             } else if ((p > root) && (q > root)) {
+                 return lowestCommonAncestor(rootRight, p, q);
+             } else {
+                 return root;
+             }
+         }
+         main: function void () {
+             root = 6;
+             p = 2;
+             q = 8;
+             printInt(lowestCommonAncestor(root, p, q));
+         }
+         

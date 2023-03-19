@@ -1,0 +1,22 @@
+
+         isAnaGram : function boolean (s1 : string, s2 : string) {
+             if (length(s1) != length(s2)) {
+                 return false;
+             }
+             for (i = 0, i < length(s1), i + 1) {
+                 if (s1[i] != s2[length(s2) - i - 1]) {
+                     return false;
+                 }
+             }
+             return true;
+         }
+         main: function void () {
+             s1 = "racecar";
+             s2 = "racecar";
+             if (isAnaGram(s1, s2)) {
+                 printString("s1 and s2 are anagrams.");
+             } else {
+                 printString("s1 and s2 are not anagrams.");
+             }
+         }
+         

@@ -1,0 +1,6 @@
+
+        main: function void () {
+            s = "Hello\tworld!\nThis is a\nnew line.";
+            printString(s);
+        }
+        

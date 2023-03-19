@@ -1,0 +1,15 @@
+
+        main: function void () {
+            if (a > 10) {
+                if (b > 10) {
+                    printString("Both a and b are greater than 10");
+                }
+                else {
+                    printString("Only a is greater than 10");
+                }
+            }
+            else {
+                printString("Neither a nor b is greater than 10");
+            }
+        }
+        

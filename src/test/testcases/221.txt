@@ -1,0 +1,8 @@
+
+        // Assert that comment is not parsed
+        /* Assert that comment is not parsed */
+        main: function array[1] of boolean (cd: auto, temp: string) {
+            a=c[d[e[s["string"]]]];
+            b=b[1,2,,3];
+            return b;
+        }

@@ -1,0 +1,14 @@
+
+         reverse : function integer (n : integer) {
+             result = 0;
+             while (n > 0) {
+                 result = result * 10 + n % 10;
+                 n = n / 10;
+             }
+             return result;
+         }
+         main: function void () {
+             n = 12345;
+             printInt(reverse(n));
+         }
+         

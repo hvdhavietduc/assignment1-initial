@@ -1,0 +1,6 @@
+
+        main: function void () {
+            s = "The path to the file is C:\\folder1\\file.txt";
+            printString(s);
+        }
+        

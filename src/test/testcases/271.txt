@@ -1,0 +1,27 @@
+
+         coinChange : function integer (coins : array[4] of integer, amount : integer) {
+             if (amount == 0) {
+                 return 0;
+             }
+             if (amount < 0) {
+                 return -1;
+             }
+             min = 999999999;
+             for (i = 0, i < length(coins), i + 1) {
+                 res = coinChange(coins, amount - coins[i]);
+                 if ((res != -1) && (res < min)) {
+                     min = res + 1;
+                 }
+             }
+             if (min == 999999999) {
+                 return -1;
+             } else {
+                 return min;
+             }
+         }
+         main: function void () {
+             coins = {1, 2, 5};
+             amount = 11;
+             printInt(coinChange(coins, amount));
+         }
+         

@@ -1,0 +1,7 @@
+
+        a : integer = 3;
+        program: function void () {
+            a, b, c: integer;
+            d, e, f: float;
+            g: boolean;
+        }
